@@ -1,0 +1,121 @@
+/* BEGIN: inventory.scss
+// -----------------------------------------------------*/
+// Filter - MDL Override default filter
+$filter-width: 240px;
+.mdl-layout--fixed-drawer.is-upgraded:not(.is-small-screen) > .mdl-layout__header {
+    margin-left: $filter-width;
+    width: calc(100% - 240px);
+}
+.mdl-layout--fixed-drawer > .mdl-layout__content {
+    margin-left: $filter-width;
+}
+@media screen and (max-width: 1024px) {
+    .mdl-layout--fixed-drawer > .mdl-layout__content {
+        margin-left: 0;
+    }
+}
+
+.ux-inventory {
+    .ux-inventory__header {
+        background: $static-white;
+        color: lighten($hex-static-900, 30%);
+        .ux-layout__header-title {
+            height: 44px;
+            align-items: flex-end;
+        }
+        .ux-layout__header-row {
+            color: $light-contrast;
+            .mdl-layout__title, .mdl-layout-title {
+                @extend h1.ux-title;
+            }
+            .ux-navigation__link {
+                color: lighten($hex-static-900, 30%);
+            }
+            &.ux-layout__header-actions {
+                padding-right: 24px;
+                padding-left: 24px;
+            }
+        }
+        .ux-layout__header-actions {
+            height: 52px;
+        }
+    }
+    .ux-inventory__drawer {
+        width: $filter-width;
+        .ux-filter__navigation {
+
+        }
+    }
+    .ux-inventory-devices {
+        height: calc(100% - 45px);
+        margin-bottom: 45px;
+        padding: 10px 30px;
+        .ux-card {
+            margin: 10px;
+        }
+    }
+}
+// Responsive Inventory Layout
+@media screen and (min-width: $screen-xxl) {
+    .ux-inventory {
+        .ux-inventory-group {border:1px solid purple;
+            padding-right: 25%;
+            padding-left: 25%;
+        }
+    }
+}
+@media screen and (max-width: $screen-xxl) and (min-width: $screen-lg) {
+    .ux-inventory {
+        .ux-inventory-group {
+            padding-right: 10%;
+            padding-left: 10%;
+        }
+    }
+}
+// Portrait tablet to Laptop - 768px to 1280
+@media screen and (max-width: $screen-lg) and (min-width: $screen-sm) {
+    .ux-inventory {
+        .ux-inventory-group {
+            padding-right: 10%;
+            padding-left: 10%;
+        }
+        .ux-inventory-devices {
+            transition: all 0.5s ease-out;
+        }
+    }
+}
+// Landscape phone to Portrait tablet - 481px to 768px
+@media screen and (max-width: $screen-sm) and (min-width: $screen-xsm) {
+    .ux-inventory {
+        .ux-inventory-group {
+            padding-right: 10%;
+            padding-left: 10%;
+        }
+        .ux-inventory-devices {
+            transition: all 0.5s ease-out;
+            padding: 10px 30px;
+            .ux-card {
+                width: 45%;
+                min-width: 0;
+                margin: 10px;
+            }
+        }
+    }
+}
+// Portrait phone - < 480px
+@media screen and (max-width: $screen-xsm) {
+    .ux-inventory {
+        .ux-inventory-group {
+            padding-right: $spacing-40;
+            padding-left: $spacing-40;
+        }
+        .ux-inventory-devices {
+            transition: all 0.5s ease-out;
+            padding: 10px 40px;
+            .ux-card {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    }
+}

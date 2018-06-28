@@ -1,0 +1,40 @@
+/* BEGIN: _variables.scss
+// -----------------------------------------------------*/
+
+/* Typography */
+$ux_main_font: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+$ux_display_font: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+
+$preferred_font: $ux_main_font;
+$performance_font: 'Helvetica', 'Arial', sans-serif;
+
+$ux_font_size: 14px;
+
+/* Layout */
+$spacing-0: 0;
+$spacing-10: 10px;
+$spacing-20: 20px;
+$spacing-30: 30px;
+$spacing-40: 40px;
+$spacing-50: 50px;
+$spacing-60: 60px;
+$spacing-70: 70px;
+$spacing-80: 80px;
+$spacing-90: 90px;
+$spacing-100: 100px;
+
+/* Responsive Widths */
+$screen-xxl: 	1920px;
+$screen-xl: 	1440px;
+$screen-lg: 	1280px;
+$screen-md: 	1024px;
+$screen-sm: 	768px;
+$screen-xsm: 	480px;
+$screen-xxsm: 	320px;
+
+/* App Bar */
+$app-bar-height: 45px;
+
+/* Nav Drawer */
+$ux-drawer-width: 325px;
+

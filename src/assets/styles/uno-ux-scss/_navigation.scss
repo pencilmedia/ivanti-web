@@ -1,0 +1,169 @@
+/* BEGIN: navigation.scss
+// -----------------------------------------------------*/
+.mat-toolbar {
+    &.ux-layout__header {
+        min-height: $app-bar-height;
+        background: $static-white;
+        color: lighten($hex-static-900, 30%);
+        .mat-toolbar-row {
+            height: $app-bar-height;
+        }
+    }
+}
+// Reusable extensions - @extend
+.active-accent-mark { // highlight for nav drawer
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 7px;
+    height: 100%;
+
+    content: '';
+
+    background-color: $hex-primary-A700;
+}
+
+/* Navigation Drawer */
+.ux-layout__drawer {
+    width: $ux-drawer-width;
+    height: 100%;
+    max-height: 100%;
+
+    color: $dark-contrast;
+    border-right: 1px solid $border-color;
+
+    @include display(flex);
+    @include flex-direction(column);
+    @include align-items(stretch);
+    @include justify-content(flex-start);
+    .ux-navigation-title, .ux-navigation-footer {
+        line-height: $app-bar-height;
+
+        height: $app-bar-height;
+        margin: auto $spacing-20;
+        padding: 0;
+
+        vertical-align: middle;
+
+        @include display(flex);
+        @include flex-direction(row);
+        @include align-items(center);
+        @include justify-content(flex-start);
+        .flex-space {
+            height: 100%;
+
+            flex-grow: 1;
+        }
+    }
+    .ux-navigation-title {
+        border-bottom: 1px solid $primary-700;
+    }
+    .ux-navigation-footer {
+        border-top: 1px solid $primary-700;
+        .ux-button__authenticate {
+            color: $dark-contrast;
+        }
+    }
+    .ux-navigation-content {
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        @include flex(1);
+        .ux-navigation-items {
+            margin-top: $spacing-70;
+
+            @include flex-direction(column);
+            @include align-items(stretch);
+            .ux-navigation__item {
+                position: relative;
+
+                display: block;
+
+                margin: 0;
+                padding: 8px $spacing-20;
+
+                text-decoration: none;
+                text-transform: uppercase;
+
+                color: $dark-contrast;
+
+                flex-shrink: 0;
+                &:hover {
+                    background-color: $primary-700;
+                }
+                &.active {
+                    &:before {
+                        @extend .active-accent-mark;
+                    }
+                }
+                .material-icons {
+                    font-size: 18px;
+
+                    margin-right: $spacing-10;
+
+                    vertical-align: middle;
+                }
+            }
+            > hr {
+                border-color: $primary-700;
+            }
+        }
+    }
+}
+
+
+/* App Header - Top Nav */
+.ux-layout__header {
+    min-height: $app-bar-height;
+    padding: 0 $spacing-10;
+    .flex-space {
+        @include flex(1);
+    }
+    .ux-layout__header__search {
+        padding-right: 20px;
+        padding-left: 20px;
+        .ux-field-group {
+            @include display(flex);
+            @include flex-direction(row);
+            @include align-items(center);
+            @include justify-content(flex-start);
+            background: lighten($hex-static-900, 50%);
+            border-radius: $border-radius;
+            width: 100%;
+            .ux-field-group-addon {
+                width: 40px;
+                text-align: center;
+                border-radius: 5px 0 0 5px;
+                padding: 3px 5px;
+                .material-icons {
+                    color: $static-black;
+                }
+            }
+            .ux-search-field {
+                color: $static-black;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                border-radius: $border-radius;
+                @include placeholder {
+                    color: $static-black;
+                }
+                .mdl-textfield__input {
+                    padding: 5px;
+                    border-bottom: none;
+                }
+                &.is-focused {
+                    .mdl-textfield__label {
+                        &:after {
+                            background: lighten($hex-primary-900, 10%);
+                        }
+                    }
+                }
+            }
+            .mdl-textfield__label {
+                color: $dark-contrast;
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+/* BEGIN: _color-definitions.scss - FOR RGB
+// -----------------------------------------------------*/
+// NOTE:
+// mdl-theme and ivanti-theme both share these colors defined in _color-definitions.scss
+
+$ivanti-primary:
+"235,235,235"
+"214,214,214"
+"194,194,194"
+"173,173,173"
+"153,153,153"
+"120,120,120"
+"99,99,99"
+"71,71,71"
+"43,43,43"
+"0,0,0"
+"218,41,28"
+"229,106,97"
+"233,127,119"
+"240,169,164";
+
+$ivanti-primary-50: nth($ivanti-primary, 1);
+$ivanti-primary-100: nth($ivanti-primary, 2);
+$ivanti-primary-200: nth($ivanti-primary, 3);
+$ivanti-primary-300: nth($ivanti-primary, 4);
+$ivanti-primary-400: nth($ivanti-primary, 5);
+$ivanti-primary-500: nth($ivanti-primary, 6);
+$ivanti-primary-600: nth($ivanti-primary, 7);
+$ivanti-primary-700: nth($ivanti-primary, 8);
+$ivanti-primary-800: nth($ivanti-primary, 9);
+$ivanti-primary-900: nth($ivanti-primary, 10);
+$ivanti-primary-A100: nth($ivanti-primary, 11);
+$ivanti-primary-A200: nth($ivanti-primary, 12);
+$ivanti-primary-A400: nth($ivanti-primary, 13);
+$ivanti-primary-A700: nth($ivanti-primary, 14);
+
+
+$ivanti-secondary:
+"0,154,245"
+"0,132,227"
+"0,109,205"
+"0,96,179"
+"0,88,166"
+"0,78,148"
+"0,69,131"
+"0,57,107"
+"0,45,84"
+"0,36,63"
+"217,234,237"
+"168,207,215"
+"139,191,202"
+"62,149,167";
+
+$ivanti-secondary-50: nth($ivanti-secondary, 1);
+$ivanti-secondary-100: nth($ivanti-secondary, 2);
+$ivanti-secondary-200: nth($ivanti-secondary, 3);
+$ivanti-secondary-300: nth($ivanti-secondary, 4);
+$ivanti-secondary-400: nth($ivanti-secondary, 5);
+$ivanti-secondary-500: nth($ivanti-secondary, 6);
+$ivanti-secondary-600: nth($ivanti-secondary, 7);
+$ivanti-secondary-700: nth($ivanti-secondary, 8);
+$ivanti-secondary-800: nth($ivanti-secondary, 9);
+$ivanti-secondary-900: nth($ivanti-secondary, 10);
+$ivanti-secondary-A100: nth($ivanti-secondary, 11);
+$ivanti-secondary-A200: nth($ivanti-secondary, 12);
+$ivanti-secondary-A400: nth($ivanti-secondary, 13);
+$ivanti-secondary-A700: nth($ivanti-secondary, 14);
+
+$ivanti-accent:
+"236,245,246"
+"216,234,237"
+"197,223,228"
+"169,207,215"
+"139,190,202"
+"112,175,189"
+"82,158,176"
+"62,147,167"
+"53,132,151"
+"44,118,136";
+
+$ivanti-accent-50: nth($ivanti-accent, 1);
+$ivanti-accent-100: nth($ivanti-accent, 2);
+$ivanti-accent-200: nth($ivanti-accent, 3);
+$ivanti-accent-300: nth($ivanti-accent, 4);
+$ivanti-accent-400: nth($ivanti-accent, 5);
+$ivanti-accent-500: nth($ivanti-accent, 6);
+$ivanti-accent-600: nth($ivanti-accent, 7);
+$ivanti-accent-700: nth($ivanti-accent, 8);
+$ivanti-accent-800: nth($ivanti-accent, 9);
+$ivanti-accent-900: nth($ivanti-accent, 10);
+
+
+$ivanti-status:
+"240,193,37"
+"241,140,49"
+"255,70,30";
+
+$ivanti-status-low: nth($ivanti-status, 1);
+$ivanti-status-medium: nth($ivanti-status, 2);
+$ivanti-status-high: nth($ivanti-status, 3);
+
+// Black & White
+$ivanti-black: "0,0,0";
+$ivanti-white: "255,255,255";
+
+// The two possible colors for overlayed text.
+$ivanti-dark-contrast: $ivanti-white !default;
+$ivanti-light-contrast: $ivanti-black !default;

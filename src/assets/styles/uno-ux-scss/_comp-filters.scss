@@ -1,0 +1,32 @@
+/* BEGIN: filters.scss
+// -----------------------------------------------------*/
+.ux-filter__drawer {
+    .ux-filter-title {
+        @extend .ux-body-2;
+        line-height: 64px;
+        padding-left: 16px;
+    }
+    .ux-navigation-filter {
+        padding: 0;
+        .ux-layout__drawer-list {
+            .ux-subheader {
+                padding: 0 0 8px 16px;
+            }
+            .ux-list {
+                &:first-of-type {
+                    padding-top: 0;
+                }
+            }
+            .ux-list__item {
+        		font-family: $ux_main_font;
+                font-size: 100%;
+                font-weight: 300;
+                min-height : 40px;
+                padding : 0 0 0 16px;
+                .mdl-checkbox__label {
+                    font-size: 100%;
+                }
+            }
+        }
+    }
+}

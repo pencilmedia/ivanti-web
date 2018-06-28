@@ -1,0 +1,75 @@
+<mdl-layout mdl-layout-fixed-header mdl-layout-fixed-drawer class="ux-inventory">
+    <!-- BEGIN: PAGE HEADER & ACTIONS -->
+    <mdl-layout-header class="ux-inventory__header">
+        <mdl-layout-header-row class="ux-layout__header-row ux-layout__header-title">
+            <mdl-layout-title>Inventory Devices</mdl-layout-title>
+            <mdl-layout-spacer></mdl-layout-spacer>
+        </mdl-layout-header-row>
+        <mdl-layout-header-row class="ux-layout__header-row ux-layout__header-actions">
+            <button md-button>Send Messages</button>
+            <button md-button>Deploy</button>
+            <button md-button>Sort</button>
+            <mdl-layout-spacer class="mdl-layout-spacer"></mdl-layout-spacer>
+            <!-- Navigation. We hide it in small screens. -->
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <button md-icon-button><md-icon>view_module</md-icon></button>
+                <button md-icon-button><md-icon>view_list</md-icon></button>
+            </nav>
+        </mdl-layout-header-row>
+    </mdl-layout-header>
+    <!-- END: PAGE HEADER & ACTIONS -->
+    <!-- BEGIN: FILTER DRAWER -->
+    <mdl-layout-drawer class="ux-inventory__drawer ux-filter__drawer ux-no-shadow">
+        <mdl-layout-title class="ux-filter-title">Filter By</mdl-layout-title>
+        <nav class="mdl-navigation ux-navigation-filter">
+            <!-- BEGIN: FILTER LIST -->
+            <div class="mdl-layout__drawer_list ux-layout__drawer-list">
+                <!-- <mdl-layout-title>Devices</mdl-layout-title> -->
+                <mdl-list class="mdl-list ux-list">
+                    <h6 class="mdl-filter__category ux-subheader">Manufacturer</h6>
+                    <mdl-list-item class="mdl-list__item ux-list__item">
+                        <span>
+                            <mdl-checkbox ng-reflect-model="false" ng-reflect-ripple-active="true" id="chkBox-02" class="mdl-checkbox is-upgraded ng-untouched ng-pristine ng-valid">
+                                <input class="mdl-checkbox__input ng-untouched ng-pristine ng-valid" type="checkbox" ng-reflect-is-disabled="false">
+                                <span class="mdl-checkbox__label"><span class="mdl-checkbox-span-value">Apple </span>
+                                    <span class="mdl-checkbox-span-count">(6)</span>
+                                </span>
+                            </mdl-checkbox>
+                        </span>
+                    </mdl-list-item>
+                    <mdl-list-item class="mdl-list__item ux-list__item">
+                        <span>
+                            <mdl-checkbox ng-reflect-model="false" ng-reflect-ripple-active="true" id="chkBox-02" class="mdl-checkbox is-upgraded ng-untouched ng-pristine ng-valid">
+                                <input class="mdl-checkbox__input ng-untouched ng-pristine ng-valid" type="checkbox" ng-reflect-is-disabled="false">
+                                <span class="mdl-checkbox__label"><span class="mdl-checkbox-span-value">Lenovo </span>
+                                    <span class="mdl-checkbox-span-count">(4)</span>
+                                </span>
+                            </mdl-checkbox>
+                        </span>
+                    </mdl-list-item>
+                    <mdl-list-item class="mdl-list__item ux-list__item">
+                        <span>
+                            <mdl-checkbox ng-reflect-model="false" ng-reflect-ripple-active="true" id="chkBox-02" class="mdl-checkbox is-upgraded ng-untouched ng-pristine ng-valid">
+                                <input class="mdl-checkbox__input ng-untouched ng-pristine ng-valid" type="checkbox" ng-reflect-is-disabled="false">
+                                <span class="mdl-checkbox__label"><span class="mdl-checkbox-span-value">Hewlett-Packard </span>
+                                    <span class="mdl-checkbox-span-count">(2)</span>
+                                </span>
+                            </mdl-checkbox>
+                        </span>
+                    </mdl-list-item>
+                </mdl-list>
+            </div>
+        </nav>
+    </mdl-layout-drawer>
+    <!-- END: FILTER DRAWER -->
+    <!-- BEGIN: PAGE CONTENT -->
+    <mdl-layout-content class="ux-inventory-devices">
+        <!-- BEGIN: INVENTORY CONTENT -->
+        <proto-card></proto-card><proto-card></proto-card><proto-card></proto-card><proto-card></proto-card>
+        <proto-card></proto-card><proto-card></proto-card><proto-card></proto-card><proto-card></proto-card>
+        <proto-card></proto-card><proto-card></proto-card><proto-card></proto-card><proto-card></proto-card>
+        <proto-card></proto-card><proto-card></proto-card><proto-card></proto-card><proto-card></proto-card>
+        <!-- END: INVENTORY CONTENT -->
+    </mdl-layout-content>
+    <!-- BEGIN: PAGE CONTENT -->
+</mdl-layout>

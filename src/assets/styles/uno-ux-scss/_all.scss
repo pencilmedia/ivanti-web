@@ -1,0 +1,28 @@
+/* BEGIN: all.scss
+// -----------------------------------------------------*/
+
+// Global Includes
+@import "variables";
+@import "mixins";
+
+// Typography
+@import "typography";
+
+// Animation
+@import "animation";
+
+// Global/Common
+@import "utility";
+@import "common";
+// @import "forms";
+
+// Page Layout
+@import "layout";
+@import "navigation";
+
+// Components
+@import "components";
+
+// Dashboard
+@import "dashboard";
+@import "inventory";

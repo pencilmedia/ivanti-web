@@ -1,0 +1,20 @@
+/* BEGIN: _static-theme.scss
+// -----------------------------------------------------*/
+// Variables mapped to simple variable names
+
+// Static Color Definitions/Theme
+@import 'palette-static';
+
+// Backgrounds
+$background-color--lightest: tint($hex-static-900, 98%);
+$background-color--lighter: tint($hex-static-900, 85%);
+
+// Borders
+$border-color: tint($hex-static-900,70%);
+$border-radius: 3px;
+
+// Shadows
+$shadow-color: tint($hex-static-900,15%);
+
+// Import Static Theme and Global Styles
+@import 'all';

@@ -1,0 +1,26 @@
+/* BEGIN: components-includes.scss
+// -----------------------------------------------------*/
+
+/* Plugins */
+/* ****************** */
+// Bourbon - Mixin library for scss
+@import '~bourbon/app/assets/stylesheets/bourbon';
+// Animate.css animation library
+@import '~animate.css/animate.min.css';
+
+/* MDL Extensions */
+/* ****************** */
+@import '~@angular2-mdl-ext/popover/popover';
+@import '~@angular2-mdl-ext/select/select';
+
+/* Web Fonts */
+/* ****************** */
+@import "~assets/styles/web-fonts/_web-fonts";
+
+/* MD, MDL and Custom Color Palette Theming */
+/* ****************** */
+@import '~assets/styles/uno-ux-scss/themes';
+
+/* Include all component styles */
+/* ****************** */
+@import '~assets/styles/uno-ux-scss/components';
