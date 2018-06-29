@@ -146,9 +146,7 @@
                 margin: 0;
                 padding: 0;
                 border-radius: $border-radius;
-                @include placeholder {
-                    color: $static-black;
-                }
+             
                 .mdl-textfield__input {
                     padding: 5px;
                     border-bottom: none;

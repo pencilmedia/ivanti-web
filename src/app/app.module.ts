@@ -5,19 +5,52 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 // Declarations
 import { AppComponent } from './app.component';
 
 // Material Design Lite
 import { MdlModule } from 'angular2-mdl';
-import { MdlSelectModule } from '@angular2-mdl-ext/select';
+// import { MdlSelectModule } from '@angular2-mdl-ext/select';
 
 // Angular 2 Material Design
-import { MaterialModule } from '@angular/material';
 import 'hammerjs';
-import { MdIconModule, MdSidenavModule, MdToolbarModule, MdTabsModule, MdSelectModule, MdInputModule, MdButtonModule, MdCheckboxModule, MdMenuModule, MdListModule, MdGridListModule, MdCardModule } from '@angular/material';
+import { 
+  MatAutocompleteModule,
+  MatBadgeModule,
+  MatBottomSheetModule,
+  MatButtonModule,
+  MatButtonToggleModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatChipsModule,
+  MatDatepickerModule,
+  MatDialogModule,
+  MatDividerModule,
+  MatExpansionModule,
+  MatGridListModule,
+  MatIconModule,
+  MatInputModule,
+  MatListModule,
+  MatMenuModule,
+  MatNativeDateModule,
+  MatPaginatorModule,
+  MatProgressBarModule,
+  MatProgressSpinnerModule,
+  MatRadioModule,
+  MatRippleModule,
+  MatSelectModule,
+  MatSidenavModule,
+  MatSliderModule,
+  MatSlideToggleModule,
+  MatSnackBarModule,
+  MatSortModule,
+  MatStepperModule,
+  MatTabsModule,
+  MatToolbarModule,
+  MatTooltipModule,
+} from '@angular/material';
 
 // Prototype
 import { protoLanding } from './components/prototype.component';
@@ -39,23 +72,23 @@ import { routing } from './app.routes';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     // MD Modules
-    MdIconModule,
-    MdSidenavModule,
-    MdToolbarModule,
-    MdTabsModule,
-    MdSelectModule,
-    MdInputModule,
-    MdButtonModule,
-    MdCheckboxModule,
-    MdMenuModule,
-    MdListModule,
-    MdGridListModule,
-    MdCardModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatTabsModule,
+    MatSelectModule,
+    MatInputModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatMenuModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
     // MDL Modules
     MdlModule,
-    MdlSelectModule,
+    // MdlSelectModule,
     routing
   ],
   declarations: [

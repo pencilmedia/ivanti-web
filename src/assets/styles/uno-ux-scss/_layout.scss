@@ -23,7 +23,7 @@ html, body {
 }
 .ux-sidenav-container {
 	height: 100%;
-	@include linear-gradient($background-color--lightest 10%, $background-color--lighter 100%);
+	linear-gradient: $background-color--lightest 10%, $background-color--lighter 100%;
 }
 .ux-layout {
     width: 100%;

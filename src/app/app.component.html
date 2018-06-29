@@ -1,6 +1,6 @@
 <main class="ux-layout">
-	<md-sidenav-container class="ux-sidenav-container">
-	  	<md-sidenav #sidenav class="ux-layout__sidenav">
+	<mat-sidenav-container class="ux-sidenav-container">
+	  	<mat-sidenav #sidenav class="ux-layout__sidenav">
 			<aside class="ux-layout__drawer">
 				<header class="ux-navigation-title">
 					<!-- <img src="assets/images/logo_ivanti_cloud_sm.svg" class="ux-logo" alt="Ivanti"> -->
@@ -65,23 +65,33 @@
 					<button href="" class="mdl-button mdl-js-button mdl-js-ripple-effect ux-button__authenticate"><i class="material-icons">exit_to_app</i> Sign Out</button>
 				</footer>
 			</aside>
-		</md-sidenav>
-		<md-toolbar class="mat-elevation-z1 ux-layout__header">
+		</mat-sidenav>
+		<mat-toolbar class="mat-elevation-z1 ux-layout__header">
 		   <span class="btn-drawer">
-		        <button md-icon-button (click)="sidenav.open()"><i class="material-icons">menu</i></button>
+		        <button mat-icon-button (click)="sidenav.open()"><i class="material-icons">menu</i></button>
 		   </span>
 		   <span class="ux-layout__header__search flex-space"><!-- This fills the remaining space of the current row -->
 				<span class="ux-flexbox flex-row ux-field-group">
-		             <span class="ux-field-group-addon"><md-icon>search</md-icon></span>
+		             <span class="ux-field-group-addon"><mat-icon>search</mat-icon></span>
 		             <span class="ux-flex">
-						 <mdl-textfield type="search" [(ngModel)]="search" placeholder="Search" autocomplete="name" class="ux-search-field"></mdl-textfield>
+						 <!-- <mdl-textfield type="search" [(ngModel)]="search" placeholder="Search" autocomplete="name" class="ux-search-field"></mdl-textfield> -->
+						 <mdl-textfield
+        type="text"
+        label="Text..."
+        [(ngModel)]="text1"
+        placeholder="type a text"
+        autofocus
+        autocomplete="name"
+        (blur)="onBlur($event)"
+        (focus)="onFocus($event)"
+        (keyup)="onKeyup($event)"></mdl-textfield>
 					 </span>
 		        </span>
 		   </span>
-		</md-toolbar>
+		</mat-toolbar>
 		<div class="ux-layout__content">
 		   <!-- Router Outlet -->
 		   <router-outlet></router-outlet>
 		</div>
-	</md-sidenav-container>
+	</mat-sidenav-container>
 </main>

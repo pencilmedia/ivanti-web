@@ -85,3 +85,22 @@
 		clear: both;
 	}
 }
+
+@mixin  display($type) {
+	display: $type;
+}
+@mixin  flex-direction($direction) {
+	flex-direction: $direction;
+}
+@mixin  flex($number) {
+	flex: $number;
+}
+@mixin  align-items($way) {
+	align-items: $way;
+}
+@mixin  justify-content($how) {
+	justify-content: $how;
+}
+@mixin  linear-gradient($background-color--lightest, $background-color--lighter) {
+	linear-gradient: $background-color--lightest 10%, $background-color--lighter 100%;
+}

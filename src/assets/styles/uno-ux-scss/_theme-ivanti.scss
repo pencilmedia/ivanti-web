@@ -25,7 +25,7 @@ $border-color-nav: $primary-700;
 	    color: lighten($hex-static-900, 30%);
 	}
 	.ux-layout__drawer {
-        @include linear-gradient(-25deg, $primary-800 80%, $primary-700);
+        linear-gradient: -25deg, $primary-800 80%, $primary-700;
 	    border-right-color: $border-color-nav;
 	    outline: 1px solid $static-white;
 	    > .ux-layout-title {
