@@ -15,7 +15,7 @@
 $color-primary: $ivanti-primary-500;
 $color-primary-dark: $ivanti-primary-800;
 $color-accent: $ivanti-accent-500;
-@import '~angular2-mdl/scss/material-design-lite';
+@import '~@angular-mdl/core/scss/material-design-lite';
 @import 'variables-mdl';
 @import "grid-mdl";
 

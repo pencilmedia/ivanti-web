@@ -19,6 +19,8 @@
   "private": true,
   "dependencies": {
     "@angular-mdl/core": "^5.0.0",
+    "@angular-mdl/popover": "^5.0.0",
+    "@angular-mdl/select": "^5.1.0",
     "@angular/animations": ">=6.0.7",
     "@angular/cdk": "6.3.1",
     "@angular/common": ">=6.0.7",
@@ -30,9 +32,6 @@
     "@angular/platform-browser": ">=6.0.7",
     "@angular/platform-browser-dynamic": ">=6.0.7",
     "@angular/router": ">=6.0.7",
-    "@angular2-mdl-ext/popover": ">=0.6.0",
-    "@angular2-mdl-ext/select": ">=0.10.3",
-    "angular2-mdl": ">=2.13.2",
     "animate.css": ">=3.5.2",
     "bourbon": "5.0.1",
     "core-js": "2.5.7",

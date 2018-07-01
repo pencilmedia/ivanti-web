@@ -8,11 +8,6 @@
 // Animate.css animation library
 @import '~animate.css/animate.min.css';
 
-/* MDL Extensions */
-/* ****************** */
-@import '~@angular2-mdl-ext/popover/popover';
-@import '~@angular2-mdl-ext/select/select';
-
 /* Web Fonts */
 /* ****************** */
 @import "~assets/styles/web-fonts/_web-fonts";
@@ -20,6 +15,11 @@
 /* MD, MDL and Custom Color Palette Theming */
 /* ****************** */
 @import '~assets/styles/uno-ux-scss/themes';
+
+/* MDL Extensions */
+/* ****************** */
+@import '~@angular-mdl/popover/popover';
+@import '~@angular-mdl/select/select';
 
 /* Include all component styles */
 /* ****************** */

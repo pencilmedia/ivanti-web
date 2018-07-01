@@ -11,12 +11,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 
 // Material Design Lite
-import { MdlModule } from 'angular2-mdl';
-// import { MdlSelectModule } from '@angular2-mdl-ext/select';
+import { MdlModule } from '@angular-mdl/core';
+import { MdlSelectModule } from '@angular-mdl/select';
+import { MdlPopoverModule } from '@angular-mdl/popover';
 
 // Angular 2 Material Design
 import 'hammerjs';
-import { 
+import {
   MatAutocompleteModule,
   MatBadgeModule,
   MatBottomSheetModule,
@@ -49,7 +50,7 @@ import {
   MatStepperModule,
   MatTabsModule,
   MatToolbarModule,
-  MatTooltipModule,
+  MatTooltipModule
 } from '@angular/material';
 
 // Prototype
@@ -74,21 +75,43 @@ import { routing } from './app.routes';
     FormsModule,
     HttpClientModule,
     // MD Modules
-    MatIconModule,
-    MatSidenavModule,
-    MatToolbarModule,
-    MatTabsModule,
-    MatSelectModule,
-    MatInputModule,
+    MatAutocompleteModule,
+    MatBadgeModule,
+    MatBottomSheetModule,
     MatButtonModule,
-    MatCheckboxModule,
-    MatMenuModule,
-    MatListModule,
-    MatGridListModule,
+    MatButtonToggleModule,
     MatCardModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatDividerModule,
+    MatExpansionModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatMenuModule,
+    MatNativeDateModule,
+    MatPaginatorModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatRippleModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatSnackBarModule,
+    MatSortModule,
+    MatStepperModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatTooltipModule,
     // MDL Modules
     MdlModule,
-    // MdlSelectModule,
+    MdlPopoverModule,
+    MdlSelectModule,
     routing
   ],
   declarations: [
