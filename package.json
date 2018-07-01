@@ -13,8 +13,8 @@
     "postinstall": "ng build --aot -prod"
   },
   "engines": {
-    "node": ">=10.5.0",
-    "npm": ">=6.1.0"
+    "node": "^10.5.0",
+    "npm": "^6.1.0"
   },
   "private": true,
   "dependencies": {
@@ -67,6 +67,7 @@
     "sass-loader": "7.0.3",
     "ts-node": "7.0.0",
     "tslint": "5.10.0",
+    "typescript": "^2.7.2",
     "webpack": "4.13.0"
   }
 }
