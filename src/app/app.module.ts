@@ -56,6 +56,7 @@ import {
 // Prototype
 import { protoLanding } from './components/prototype.component';
 import { protoCard } from './components/card/card.component';
+import { protoCardFlip } from './components/card-flip/card-flip.component';
 
 // Pages
 import { protoPages } from './pages/pages.component';
@@ -63,6 +64,7 @@ import { protoHome } from './pages/home/home.component';
 import { protoInventory } from './pages/inventory/inventory.component';
 import { protoScratch } from './pages/scratchsheet/scratchsheet.component';
 import { protoIcons } from './pages/icons/icons.component';
+import { policyHome } from './pages/policy/policy.component';
 
 // Routing
 import { routing } from './app.routes';
@@ -123,10 +125,12 @@ import { routing } from './app.routes';
     protoInventory,
     protoScratch,
     protoCard,
+    protoCardFlip,
 
     // Pages
     protoPages,
-    protoIcons
+    protoIcons,
+    policyHome
 
   ],
   providers: [],

@@ -4,10 +4,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'proto-home',
-  templateUrl: './home.component.html'
+  selector: 'policy-home',
+  templateUrl: './policy.component.html'
   // styleUrls: ['./app.component.css']
 })
 
 // Component class
-export class protoHome {}
+export class policyHome {}
